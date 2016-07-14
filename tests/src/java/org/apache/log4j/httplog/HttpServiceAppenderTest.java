@@ -9,9 +9,7 @@ import org.apache.log4j.spi.ThrowableInformation;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-/**
- * Created by abraham on 14/7/2016.
- */
+
 public class HttpServiceAppenderTest extends TestCase {
 
     private static final BlockingQueue<LoggingEvent> loggingEventQueue = new LinkedBlockingQueue<LoggingEvent>();
