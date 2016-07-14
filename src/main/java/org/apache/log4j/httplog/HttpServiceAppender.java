@@ -11,9 +11,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by abraham on 14/7/2016.
- */
+
 public class HttpServiceAppender extends AppenderSkeleton {
     private static final BlockingQueue<LoggingEvent> loggingEventQueue = new LinkedBlockingQueue<LoggingEvent>();
     private static Thread thread;
