@@ -1,4 +1,4 @@
-# log4j
+# log4jhttpPost
 All the functionality of log4j is the same.<br>
 The extended functionality is the ability to send http GET requests the logs you want to a server.<br>
 The http GET requests contains two parameters:<br>
