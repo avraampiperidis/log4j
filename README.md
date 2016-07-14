@@ -1,8 +1,8 @@
 # log4jhttpPost
 
 All the functionality of log4j is the same.<br>
-The extended functionality is the ability to send http GET requests the logs you want to a server.<br>
-The http GET requests contains two parameters:<br>
+The extended functionality is the ability to send HTTP GET requests the logs you want to a server.<br>
+The HTTP GET requests contains two parameters:<br>
 1)message 2)error <br>
 eg.  http://www.yourserver.com/saveinfo.php?message=themessage&error=theerror <br>
 message parameter contains log's info,message,level<br>
