@@ -8,6 +8,8 @@ eg.  http://www.yourserver.com/saveinfo.php?message=themessage&error=theerror <b
 message parameter contains log's info,message,level<br>
 error parameter contains Throwable's(and any subclass)info<br>
 
+The jar https://github.com/avraampiperidis/log4jhttpPost/blob/master/log4jhttppost.jar?raw=true 
+
 #Basic Usage
 if there is not connection or invalid host the log will be lost.<br>
 ```java
