@@ -19,9 +19,7 @@ public class HttpServiceAppender extends AppenderSkeleton {
 
 
     static void init() {
-
         if(thread == null || !thread.isAlive()) {
-
             thread = new Thread(new Runnable() {
                 public void run() {
                     try {
@@ -49,6 +47,7 @@ public class HttpServiceAppender extends AppenderSkeleton {
             } catch (InterruptedException e) {
             }
         }
+        
     }
 
 
@@ -65,7 +64,6 @@ public class HttpServiceAppender extends AppenderSkeleton {
             message = event.getMessage().toString();
         }
 
-
         sendDataToServer(url,message,throwinfo);
 
     }
@@ -76,7 +74,6 @@ public class HttpServiceAppender extends AppenderSkeleton {
     protected void append(LoggingEvent event) {
         loggingEventQueue.add(event);
         init();
-
     }
 
 
@@ -84,7 +81,6 @@ public class HttpServiceAppender extends AppenderSkeleton {
         if(this.closed) {
             return;
         }
-
         this.closed = true;
     }
 
@@ -130,7 +126,6 @@ public class HttpServiceAppender extends AppenderSkeleton {
             }
 
             String urlparameters = link+"?message="+ URLEncoder.encode(message,"UTF-8")+"&error="+URLEncoder.encode(String.valueOf(stringBuilder),"UTF-8");
-
 
             URL url = new URL(urlparameters);
 
