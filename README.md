@@ -1,4 +1,5 @@
 # log4jhttpPost
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-log4jhttpPost-green.svg?style=true)](https://android-arsenal.com/details/1/4105)
 
 All the functionality of log4j is the same.<br>
 The extended functionality is the ability to send HTTP GET requests the logs you want to a server.<br>
