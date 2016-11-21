@@ -74,7 +74,7 @@ public class HttpLogTest extends TestCase {
 
         Thread.sleep(5000);
 
-        System.out.println("from 150 req:left after 5 sec:"+HttpLog.getQueue());
+        System.out.println("from 100 req:left after 5 sec:"+HttpLog.getQueue());
         HttpLog.clearQueue();
         assertEquals(0,HttpLog.getQueue());
 
